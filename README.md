@@ -15,7 +15,19 @@
 
 ## Инструкция по использованию
 ### Разворачивание системы
-1. Установите файлы проекта в директорию.
-2. Измените `.env` файл по примеру в `.env_example`
-3. Запустить Docker Compose: `docker compose up -d --build`.
-4. Скрипт сразу начнет свою работу.
+1. Перейдите в папку `Docker`, здесь хранятся файлы самого решения для запуска. Выполняйте все последующие инструкции, находясь в ней.
+2. Создайте файл `.env` с переменными окружения, по примеру в `.env_example`
+```dotenv
+CLICKHOUSE_DB=default
+CLICKHOUSE_USER=default
+CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1
+CLICKHOUSE_PASSWORD=
+
+CLICKHOUSE_HOST=clickhouse
+CLICKHOUSE_PORT=8123
+
+PROCESSING_LIMIT=8000000
+```
+3. Перенесите .csv файлы в папку `input_data`.
+4. Запустите Docker Compose: `docker compose up --build`.
+5. Скрипт сразу начнет свою работу, в логах можете наблюдать за его работой.
