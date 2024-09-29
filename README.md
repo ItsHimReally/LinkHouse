@@ -17,9 +17,9 @@ Memory Limit: 12 GB
 Virtual Disk Limit: 48 GB
 
 В зависимости от Memory Limit потом измените переменную в `.env` дальше по принципу:
-8 GB -> PROCESSING_LIMIT=6000000
-10 GB -> PROCESSING_LIMIT=8000000
-12 GB -> PROCESSING_LIMIT=10000000
+- 8 GB -> PROCESSING_LIMIT=6000000
+- 10 GB -> PROCESSING_LIMIT=8000000
+- 12 GB -> PROCESSING_LIMIT=10000000
 
 ## Инструкция по использованию
 ### Разворачивание системы
